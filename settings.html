@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>设置 - NeoBrowser</title>
+  <style>
+    body { font-family: system-ui; background: #1e1e1e; color: #ccc; padding: 20px; }
+    .container { max-width: 600px; margin: 0 auto; }
+    h1 { color: white; }
+    .form-group { margin-bottom: 15px; }
+    label { display: block; margin-bottom: 5px; }
+    input[type="text"], select { width: 100%; padding: 8px; background: #2d2d2d; border: 1px solid #444; color: white; border-radius: 4px; }
+    button { background: #0078d4; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #005a9e; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>设置</h1>
+    <form id="settings-form">
+      <div class="form-group">
+        <label for="homepage">主页</label>
+        <input type="text" id="homepage" name="homepage" placeholder="https://www.google.com">
+      </div>
+      <div class="form-group">
+        <label for="searchEngine">搜索引擎</label>
+        <select id="searchEngine" name="searchEngine">
+          <option value="https://www.google.com/search?q=">Google</option>
+          <option value="https://www.bing.com/search?q=">Bing</option>
+          <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+          <option value="https://search.yahoo.com/search?p=">Yahoo</option>
+        </select>
+      </div>
+      <button type="submit">保存</button>
+    </form>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>
