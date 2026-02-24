@@ -1,38 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>NeoBrowser</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不刘名科创 | 全能技术工作室</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <div class="browser">
-    <!-- 标签页栏 -->
-    <div class="tab-bar">
-      <div class="tabs-container" id="tabs-container">
-        <!-- 标签页由 JS 动态生成 -->
-      </div>
-      <button class="new-tab-btn" id="new-tab-btn">+</button>
-    </div>
-
     <!-- 导航栏 -->
-    <div class="nav-bar">
-      <button class="nav-btn" id="back-btn">←</button>
-      <button class="nav-btn" id="forward-btn">→</button>
-      <button class="nav-btn" id="reload-btn">↻</button>
-      <button class="nav-btn" id="home-btn">🏠</button>
-      <input type="text" class="url-input" id="url-input" placeholder="输入网址或搜索">
-    </div>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">不刘名科创</a>
+                <ul class="nav-links">
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                    <li><a href="#services">服务</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#team">团队</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
 
-    <!-- 书签栏 -->
-    <div class="bookmarks-bar" id="bookmarks-bar">
-      <!-- 书签由 JS 动态生成 -->
-    </div>
+    <!-- 英雄区域 -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>工作室网站建成！！！</h1>
+                <p>初步优化</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- 网页容器（使用 webview 显示页面） -->
-    <div class="webview-container" id="webview-container"></div>
-  </div>
+    <!-- 关于我们 -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>关于我们</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>-</h3>
+                    <p>-</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="团队工作">
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="renderer.js"></script>
+    <!-- 服务 -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>我们的服务</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>品牌设计</h3>
+                    <p>我们创建独特的品牌标识，包括标志设计、视觉系统和品牌指南，帮助您的品牌在市场中脱颖而出。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>网站开发</h3>
+                    <p>我们设计和开发响应式网站，提供卓越的用户体验，确保您的网站在所有设备上都能完美展示。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>移动应用</h3>
+                    <p>我们开发直观、功能丰富的移动应用程序，帮助您与客户建立更紧密的联系并扩展业务。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>UI/UX设计</h3>
+                    <p>我们专注于用户界面和用户体验设计，创建直观、易用且美观的数字产品。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>数字营销</h3>
+                    <p>我们制定全面的数字营销策略，包括社交媒体管理、内容营销和搜索引擎优化。</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📸</div>
+                    <h3>摄影与视频</h3>
+                    <p>我们提供专业的摄影和视频制作服务，为您的品牌创造引人入胜的视觉内容。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 作品集 -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>作品集</h2>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目1">
+                    <div class="portfolio-overlay">
+                        <h3>品牌重塑项目</h3>
+                        <p>为科技公司进行的全面品牌重塑</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目2">
+                    <div class="portfolio-overlay">
+                        <h3>电子商务网站</h3>
+                        <p>为时尚品牌打造的响应式电商平台</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目3">
+                    <div class="portfolio-overlay">
+                        <h3>移动应用设计</h3>
+                        <p>为健康追踪应用设计的用户界面</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目4">
+                    <div class="portfolio-overlay">
+                        <h3>企业网站</h3>
+                        <p>为咨询公司设计的专业网站</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目5">
+                    <div class="portfolio-overlay">
+                        <h3>社交媒体活动</h3>
+                        <p>为食品品牌策划的社交媒体营销活动</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="项目6">
+                    <div class="portfolio-overlay">
+                        <h3>包装设计</h3>
+                        <p>为化妆品系列设计的创新包装</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- 联系我们 -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>联系我们</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>让我们开始您的项目</h3>
+                    <p>我们期待与您合作，共同创造出色的设计解决方案。请随时与我们联系，讨论您的项目需求。</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>地址</h4>
+                            <p>暂无</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>电话</h4>
+                            <p>暂未开启</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>邮箱</h4>
+                            <p>buliuming1011@16.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="主题">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="您的消息" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>不刘名科创</h3>
+                    <p>为全能而生</p>
+                    <div class="social-links">
+                        <a href="#">B</a>
+                        <a href="#">Q</a>
+                        <a href="#">G</a>
+                        <a href="#">K</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#services">服务</a></li>
+                        <li><a href="#portfolio">作品集</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>服务</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">品牌设计</a></li>
+                        <li><a href="#">网站开发</a></li>
+                        <li><a href="#">移动应用</a></li>
+                        <li><a href="#">UI/UX设计</a></li>
+                        <li><a href="#">数字营销</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>订阅我们的通讯</h3>
+                    <p>订阅以获取最新的设计趋势和工作室动态。</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="您的邮箱地址">
+                        </div>
+                        <button type="submit" class="btn">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 不刘名科创工作室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
 </body>
 </html>
