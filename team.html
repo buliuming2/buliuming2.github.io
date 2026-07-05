@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不刘名科创 | 团队</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">不刘名科创</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="history.html">发展史</a></li>
+                    <li><a href="portfolio.html">作品集</a></li>
+                    <li><a href="team.html" class="active">团队</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换深色模式">🌙</button>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 团队 -->
+    <section class="team fade-in visible" id="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>我们的团队</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">K</div>
+                    <h3>Keyoweb</h3>
+                    <p class="team-role">创始人 / 全栈开发者</p>
+                    <p>热爱开源，专注于 Web 技术与创意项目</p>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">?</div>
+                    <h3>期待你的加入</h3>
+                    <p class="team-role">开放职位</p>
+                    <p>如果你对技术充满热情，欢迎加入我们</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>不刘名科创</h3>
+                    <p>为全能而生</p>
+                    <div class="social-links">
+                        <a href="#">B</a>
+                        <a href="#">Q</a>
+                        <a href="#">G</a>
+                        <a href="#">K</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">发展史</a></li>
+                        <li><a href="portfolio.html">作品集</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>订阅我们的通讯</h3>
+                    <p>订阅以获取最新的设计趋势和工作室动态。</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="您的邮箱地址">
+                        </div>
+                        <button type="submit" class="btn">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 不刘名科创工作室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

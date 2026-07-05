@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不刘名科创 | 作品集</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">不刘名科创</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="history.html">发展史</a></li>
+                    <li><a href="portfolio.html" class="active">作品集</a></li>
+                    <li><a href="team.html">团队</a></li>
+                </ul>
+                <button class="theme-toggle" onclick="toggleTheme()" aria-label="切换深色模式">🌙</button>
+                <div class="menu-toggle">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 作品集 -->
+    <section class="portfolio fade-in visible" id="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>作品集</h2>
+            </div>
+            <div class="portfolio-content">
+                <div class="portfolio-card">
+                    <h3>archbolk</h3>
+                    <p>一个基于 Rust 开发的操作系统内核，从零开始构建，探索操作系统底层原理</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/buliuming2/archbolk" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3>豆芽人联盟：星芽之约</h3>
+                    <p>《豆芽人联盟：星芽之约》是一个文本型 galgame，由 IP《豆芽人联盟》创作而成</p>
+                    <div class="portfolio-links">
+                        <a href="https://buliuming2.github.io/staryaylove/" class="btn">项目官网</a>
+                        <a href="https://github.com/buliuming2/staryaylove" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3>badtaxt</h3>
+                    <p>输入一个名字，一键生成猎奇文案，当然也可以自制文案模板</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/buliuming2/badtaxt" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3>豆芽人联盟 Wiki（yaywiki）</h3>
+                    <p>豆芽人联盟 Yay Alliance 的 Wiki 知识库，记录联盟世界观与设定</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/buliuming2/yaywiki" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3>BA-Community</h3>
+                    <p>《蔚蓝档案》的第三方"社区"，为玩家提供交流与信息分享平台</p>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/buliuming2/BA-Community" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+                <div class="portfolio-card">
+                    <h3>韦布 AI（weibuai）</h3>
+                    <p>基于 Qwen3B 微调的 AI 大模型，探索轻量级 AI 的无限可能</p>
+                    <div class="portfolio-links">
+                        <a href="https://www.modelscope.cn/models/keyoweb/weibu/" class="btn">模型主页</a>
+                        <a href="https://github.com/buliuming2/weibuai" class="btn btn-outline">项目仓库</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>不刘名科创</h3>
+                    <p>为全能而生</p>
+                    <div class="social-links">
+                        <a href="#">B</a>
+                        <a href="#">Q</a>
+                        <a href="#">G</a>
+                        <a href="#">K</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="history.html">发展史</a></li>
+                        <li><a href="portfolio.html">作品集</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>订阅我们的通讯</h3>
+                    <p>订阅以获取最新的设计趋势和工作室动态。</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="您的邮箱地址">
+                        </div>
+                        <button type="submit" class="btn">订阅</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 不刘名科创工作室. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
